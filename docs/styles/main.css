@@ -1,0 +1,161 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* blocks */
+
+.block {
+    display: block;
+}
+
+.youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.cardholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* elements */
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+    height: 400px;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+.title p {
+    padding: 1em;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    background-color: #f8f8f8dc;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.description p {
+    font-size: 18px;
+    height: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    
+    background-color: rgb(255, 51, 0);
+}
+
+.price p {
+    margin: 1rem;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+
+.title p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.embeded {
+    width: 100%;
+    height: auto;
+}
+
+/* modificators */
+
+.fullscreen {
+    width: 100%;
+}
+
+.bg-white {
+    background-color: rgb(233, 233, 233);
+}
+
+.bg-black {
+    background-color: rgb(23, 23, 23);
+}
+
+.bg-instagram {
+    padding-bottom: 5rem;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.font-white {
+    color: white;
+}
+
+.large {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.bg-violet {
+    background-color: #bc1888;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}   
+
+.fit {
+    margin: 0;
+    height: auto;
+}
+
+.tall {
+    height: 540px;
+}
+
+.short {
+    height: 350px;
+}
