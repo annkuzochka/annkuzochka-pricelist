@@ -84,6 +84,8 @@
     justify-content: center;
     align-items: center;
 
+    padding: 1.2rem;
+
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
     
@@ -91,7 +93,6 @@
 }
 
 .price p {
-    margin: 1rem;
     font-weight: 400;
     font-size: 24px;
     color: white;
@@ -158,4 +159,10 @@
 
 .short {
     height: 350px;
+}
+
+@media only screen and (max-width: 375px) {
+    .price p {
+        font-size: 20px;
+    }
 }
