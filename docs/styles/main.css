@@ -35,7 +35,7 @@ body {
 
 .fullscreen {
     background: url('../images/waves.svg') no-repeat, url('../images/waves_bottom.svg') no-repeat;
-    background-size: 230%, 230%;
+    background-size: 112%, 109%;
     background-position: bottom, top;
 }
 
@@ -49,8 +49,9 @@ body {
 .cardholder {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    /* flex-direction: column; */
 }
 
 /* elements */
@@ -162,9 +163,32 @@ body {
     height: 350px;
 }
 
+.limiter {
+    max-width: 675px;
+    margin: 0 auto;
+}
+
 @media only screen and(max-width: 375px) {
     .price p {
         font-size: 20px;
+    }
+
+    .fullscreen {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .limiter {
+        max-width: none;
+    }
+    
+    .cardholder {
+        justify-content: center;
+    }
+
+    .fullscreen {
+        background-size: 230%, 260%;
     }
 }
 
