@@ -15,18 +15,28 @@
     display: none;
 }
 
-/* blocks */
-
-.block {
-    display: block;
+html {
+    height: 100%;
 }
+
+body {
+    background-color: #f6f6f6;
+    height: 100%;
+}
+
+/* blocks */
 
 .youtube {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+}
+
+.fullscreen {
+    background: url('../images/waves.svg') no-repeat, url('../images/waves_bottom.svg') no-repeat;
+    background-size: 230%, 230%;
+    background-position: bottom, top;
 }
 
 .instagram {
@@ -34,7 +44,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
 }
 
 .cardholder {
@@ -42,9 +51,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-
-    margin-top: 5rem;
-    margin-bottom: 5rem;
 }
 
 /* elements */
@@ -56,7 +62,7 @@
     width: 300px;
     height: 400px;
     margin: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 .title p {
@@ -69,14 +75,14 @@
     height: 100%;
 
     background-color: #f8f8f8dc;
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .description p {
     font-size: 18px;
     height: 100%;
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 1rem;
 }
 
 .price {
@@ -86,10 +92,10 @@
 
     padding: 1.2rem;
 
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    
-    background-color: rgb(255, 51, 0);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+    background-color: #df2d00;
 }
 
 .price p {
@@ -110,10 +116,6 @@
 
 /* modificators */
 
-.fullscreen {
-    width: 100%;
-}
-
 .bg-white {
     background-color: rgb(233, 233, 233);
 }
@@ -123,12 +125,11 @@
 }
 
 .bg-instagram {
-    padding-bottom: 5rem;
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888',GradientType=1);
 }
 
 .font-white {
@@ -145,8 +146,8 @@
 }
 
 .shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
-}   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .fit {
     margin: 0;
@@ -161,8 +162,24 @@
     height: 350px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and(max-width: 375px) {
     .price p {
         font-size: 20px;
+    }
+}
+
+@media only screen and(min-width: 1224px) {
+    .fullscreen {
+        background: url('../images/waves.svg') no-repeat, url('../images/waves_bottom.svg') no-repeat;
+        background-size: contain, contain;
+        background-position: bottom, top;
+    }
+
+    .bg-instagram {
+        background: #f09433;
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888',GradientType=1);
     }
 }
