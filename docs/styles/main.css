@@ -34,6 +34,7 @@ body {
 }
 
 .fullscreen {
+    margin-top: -1px;
     background: url('../images/waves.svg') no-repeat, url('../images/waves_bottom.svg') no-repeat;
     background-size: 112%, 109%;
     background-position: bottom, top;
@@ -115,6 +116,48 @@ body {
     height: auto;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #c70000;
+    
+}
+
+.plug {
+    height: 3.5rem;
+    background-color: #c70000;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-item:hover .nav-link {
+    background-color: #ffffff23;
+}
+
+.nav-item:first-child {
+    margin-left: auto;
+}
+
+.nav-link {
+    color: #ececec;
+    transition: 200ms;
+    padding: 1rem;
+}
+
+.nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
 /* modificators */
 
 .bg-white {
@@ -168,7 +211,7 @@ body {
     margin: 0 auto;
 }
 
-@media only screen and(max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .price p {
         font-size: 20px;
     }
@@ -178,11 +221,11 @@ body {
     }
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
     .limiter {
         max-width: none;
     }
-    
+
     .cardholder {
         justify-content: center;
     }
@@ -192,7 +235,7 @@ body {
     }
 }
 
-@media only screen and(min-width: 1224px) {
+@media only screen and (min-width: 1224px) {
     .fullscreen {
         background: url('../images/waves.svg') no-repeat, url('../images/waves_bottom.svg') no-repeat;
         background-size: contain, contain;
